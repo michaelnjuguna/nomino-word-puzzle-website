@@ -1,0 +1,28 @@
+@import "../../variables.component";
+
+a {
+  color: $lightColor;
+  border-color: $lightColor;
+  background-color: $lightColor;
+  color: $darkColor;
+  border-width: 3px;
+  border-style: solid;
+  padding: 1rem;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  text-align: center;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  &:hover{
+    color: $lightColor;
+    background-color: $darkColor;
+    border-color:$lightColor ;
+  }
+}

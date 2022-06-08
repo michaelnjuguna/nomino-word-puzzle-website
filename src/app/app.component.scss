@@ -1,0 +1,52 @@
+@import "variables.component";
+// heading
+.page-title {
+  color: $lightColor;
+  text-align: center;
+  font-size: 3rem;
+  font-family: $mainFont;
+  padding-block: 2rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  // content
+  .content {
+    h1 {
+      font-size: 2rem;
+      color: $lightColor;
+      text-align: center;
+    }
+    .links {
+      margin-top: 3rem;
+      align-items: left;
+    }
+  }
+  // image
+  .image {
+    height: 80vh;
+    text-align: center;
+    img {
+      border-radius: 8px;
+      height: 80%;
+    }
+  }
+}
+// responsive
+@media (max-width:843px) {
+  .container {
+    flex-direction: column;
+  }
+  
+}
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  font-size: 1.6rem;
+ // transform: translateX(50%);
+  //height: 10%;
+  width: 90%;
+}
